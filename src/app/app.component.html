@@ -1,0 +1,306 @@
+
+
+<div class="content" role="main">
+</div>
+<div class="container">
+  <nz-card class="cardBody">
+    <H2>USER INFORMATION</H2><br>
+    <div class="Profilebody">
+      <div class="content">
+        <div nz-row>
+          <div class="imgBackground">
+            <img
+            nz-image
+            class="bgIMG"
+            index = "0"
+            nzSrc= {{urlCover}}
+            alt=""
+          />
+          <input type="file" id="fileInput" style="display: none;" (change)="onFileChanged($event,'Cov')" #fileUploadCOVER>
+          <div class="file-upload">
+            <button  color="primary" class="upload-btn" (click)="fileUploadCOVER.click()">
+              <span nz-icon nzType="camera" nzTheme="outline"></span> EDIT COVER PHOTO
+            </button>
+          </div>
+          </div>
+        </div>
+        <br>
+      <div nz-row >
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="9">
+            <p>Username</p>
+        </div>
+        <div nz-col nzSpan="9">
+            <p>NICK NAME</p>
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="9"  class= "divInput">
+          <input nz-input />
+        </div>
+        <div nz-col nzSpan="9"  class= "divInput">
+          <input nz-input />
+        </div>
+      </div>
+      <br>
+      <div nz-row >
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="9">
+            <p>FIRST NAME</p>
+        </div>
+        <div nz-col nzSpan="9">
+            <p>LAST NAME</p>
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="9"  class= "divInput">
+          <input nz-input />
+        </div>
+        <div nz-col nzSpan="9"  class= "divInput">
+          <input nz-input />
+        </div>
+      </div><br>
+      <div nz-row >
+        <div nz-col nzSpan="6" ></div>
+        <div nz-col nzSpan="9">
+            <p>POSITION</p>
+        </div>
+        <div nz-col nzSpan="9">
+            <p>NATIONALITY</p>
+        </div>
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="9" class= "divInput">
+          <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Please Select">
+            <nz-option nzLabel="PM" nzValue="PM"></nz-option>
+            <nz-option nzLabel="Lead" nzValue="Lead"></nz-option>
+            <nz-option nzLabel="Jur" nzValue="Jur"></nz-option>
+          </nz-select>
+        </div>
+        <div nz-col nzSpan="9" class= "divInput">
+          <input nz-input />
+        </div>
+      </div><br>
+      <div nz-row >
+        <div nz-col nzSpan="6"></div>
+        <div nz-col nzSpan="9">
+            <p>TELEPHON NUMBER</p>
+        </div>
+        <div nz-col nzSpan="9">
+            <p>STARTING DATE</p>
+        </div>
+        <div nz-col nzSpan="6" ></div>
+        <div nz-col nzSpan="9"class= "divInput">
+          <input nz-input type="number"/>
+        </div>
+        <div nz-col nzSpan="9" class= "divInput">
+          <nz-date-picker></nz-date-picker>
+        </div>
+      </div><br>
+  </div>
+</div>
+  <img
+      nz-image
+      class="floating-image"
+      index = "0"
+      nzSrc={{urlProfile}}
+      alt="" 
+      style="background-color: #c7c8cc;"
+    />
+    
+    <input type="file" id="fileInput" style="display: none;" (change)="onFileChanged($event,'Pro')" #fileUploadProfile>
+    <div class="file-upload">
+      <button  color="primary" class="uploadProfile-btn" (click)="fileUploadProfile.click()">
+        <span nz-icon nzType="camera" nzTheme="outline"></span> 
+      </button>
+    </div>
+  </nz-card><br>
+  <nz-card class="cardBody">
+    <H2>CONTACT INFORMATION</H2><br>
+    <div nz-row >
+      <div nz-col nzSpan="4"></div>
+      <div nz-col nzSpan="20">
+          <p>ADDRESS</p>
+      </div>
+      <div nz-col nzSpan="4" ></div>
+      <div nz-col nzSpan="20"class= "divInput">
+        <input nz-input placeholder="ADDRESS"/>
+      </div>
+    </div><br>
+    <div nz-row >
+      <div nz-col nzSpan="4"></div>
+      <div nz-col nzSpan="5">
+          <p>SUB DISTRICT</p>
+      </div>
+      <div nz-col nzSpan="5">
+          <p>DISTRICT</p>
+      </div>
+      <div nz-col nzSpan="5">
+          <p>PROVINCE</p>
+      </div>
+      <div nz-col nzSpan="5">
+          <p>POSTAL CODE</p>
+      </div>
+      <div nz-col nzSpan="4" ></div>
+      <div nz-col nzSpan="5"class= "divInput">
+        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Please Select">
+        </nz-select>
+      </div>
+      <div nz-col nzSpan="5"class= "divInput">
+        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Please Select">
+        </nz-select>
+      </div>
+      <div nz-col nzSpan="5"class= "divInput">
+        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Please Select">
+        </nz-select>
+      </div>
+      <div nz-col nzSpan="5"class= "divInput">
+        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Please Select">
+        </nz-select>
+      </div>
+    </div><br>
+    <div nz-row >
+      <div nz-col nzSpan="4"></div>
+      <div nz-col nzSpan="7">
+          <p>FACEBOOK</p>
+      </div>
+      <div nz-col nzSpan="6">
+          <p>LINE ID</p>
+      </div>
+      <div nz-col nzSpan="7">
+          <p>INSTAGRAM</p>
+      </div>
+      <div nz-col nzSpan="4" ></div>
+      <div nz-col nzSpan="7"class= "divInput">
+        <input nz-input />
+      </div>
+      <div nz-col nzSpan="6"class= "divInput">
+        <input nz-input />
+      </div>
+      <div nz-col nzSpan="7"class= "divInput">
+        <input nz-input />
+      </div>
+    </div><br>
+  </nz-card><br>
+  <nz-card class="cardBody">
+    <H2>EDUCATION INFORMATION</H2><br> 
+    <div nz-row >
+      <div nz-col nzSpan="24" *ngIf="showedubtnAdd" class="btnAdd">
+        <button nz-button nzType="primary" class="btnAdd" (click)="AddItem('edu')">ADD EDUCATION</button>
+      </div>
+    </div>
+    <div nz-row *ngIf="showeduAdd" class="divAdd">
+      <div nz-col nzSpan="8" >
+        <input nz-input [(ngModel)]="neweduLabel" type="number" placeholder="Enter Year" maxlength="4" />
+      </div>
+      <div nz-col nzSpan="8" >
+        <input nz-input [(ngModel)]="neweduContent" placeholder="Enter University Name" />
+      </div>
+      <button nz-button nzType="primary" class="btnAdd" (click)="saveItem()">Save</button>
+    </div>
+    <nz-timeline style="width: 25vw;">
+      <nz-timeline-item nzLabel="2015-09-01" *ngFor="let item of eduItems" [nzLabel]="item.label">{{ item.content }} </nz-timeline-item>
+    </nz-timeline>
+  </nz-card><br>
+  <nz-card class="cardBody">
+    <H2>EXPERIENCE INFORMATION</H2><br>
+    <div nz-row >
+      <div nz-col nzSpan="24" *ngIf="showexpbtnAdd" class="btnAdd">
+        <button nz-button nzType="primary" class="btnAdd" (click)="AddItem('exp')">ADD EXPERIENCE</button>
+      </div>
+    </div>
+    <div nz-row *ngIf="showexpAdd" class="divAdd">
+      <div nz-col nzSpan="8" >
+        <input nz-input [(ngModel)]="newexpContent" placeholder="Enter Your Company Name" />
+      </div>
+      <button nz-button nzType="primary" class="btnAdd" (click)="saveItem()">Save</button>
+    </div>
+    <div nz-row nzJustify="center">
+      <nz-timeline nzMode="left" style="width: 25vw;">
+        <nz-timeline-item *ngFor="let item1 of expItems">
+          <div nz-form-item>
+            <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Please Select" [(ngModel)]="item1.content">
+              <ng-container *ngFor="let item2 of expItems">
+                <nz-option [nzValue]="item2.content" nzLabel={{item2.content}}></nz-option>
+              </ng-container>
+            </nz-select>
+          </div>
+        </nz-timeline-item>
+      </nz-timeline>
+    </div>
+  </nz-card><br>
+  <nz-card class="cardBody">
+    <H2>SKILL INFORMATION</H2><br>
+    <div nz-row >
+      <div nz-col nzSpan="24" *ngIf="showskillbtnAdd" class="btnAdd">
+        <button nz-button nzType="primary" class="btnAdd" (click)="AddItem('skill')">ADD SKILL</button>
+      </div>
+    </div>
+    <div nz-row *ngIf="showskillAdd" class="divAdd">
+      <div nz-col nzSpan="8" >
+        <input nz-input [(ngModel)]="newskillContent" placeholder="Enter Your Skill" />
+      </div>
+      <div nz-col nzSpan="8" >
+        <nz-select [(ngModel)]="newskillLevelContent" nzAllowClear nzPlaceHolder="Choose Your SkillLevel">
+          <nz-option nzValue="1" nzLabel="1"></nz-option> 
+          <nz-option nzValue="2" nzLabel="2"></nz-option>
+          <nz-option nzValue="3" nzLabel="3"></nz-option>
+          <nz-option nzValue="4" nzLabel="4"></nz-option>
+          <nz-option nzValue="5" nzLabel="5"></nz-option>
+          <nz-option nzValue="6" nzLabel="6"></nz-option>
+          <nz-option nzValue="7" nzLabel="7"></nz-option>
+          <nz-option nzValue="8" nzLabel="8"></nz-option>
+          <nz-option nzValue="9" nzLabel="9"></nz-option>
+          <nz-option nzValue="10" nzLabel="10"></nz-option>
+        </nz-select>
+      </div>
+      <button nz-button nzType="primary" class="btnAdd" (click)="saveItem()">Save</button>
+    </div>
+    <div nz-row nzJustify="center" *ngFor="let item of skillItems">
+      <div nz-col nzSpan='4'>
+        <p>{{item.content}}</p>
+      </div>
+      <div nz-col  nzSpan='2'>
+        <p>{{item.skillpoint}}</p>
+      </div>
+      <div nz-col nzSpan='4'>
+        <nz-progress [nzPercent]='item.skillpoint * 10' [nzShowInfo]="false"></nz-progress>
+      </div>
+    </div>
+  </nz-card><br>
+  <nz-card class="cardBody">
+    <H2>INTERESTS INFORMATION</H2><br>
+    <div nz-row >
+      <div nz-col nzSpan="24" *ngIf="showintbtnAdd" class="btnAdd">
+        <button nz-button nzType="primary" class="btnAdd" (click)="AddItem('int')">ADD INTERESTS</button>
+      </div>
+    </div>
+    <div nz-row *ngIf="showintAdd" class="divAdd">
+      <div nz-col nzSpan="8" >
+        <input nz-input [(ngModel)]="newintContent" placeholder="Enter Your INTERESTS" />
+      </div>
+      <button nz-button nzType="primary" class="btnAdd" (click)="saveItem()">Save</button>
+    </div>
+    <div nz-row nzJustify="center">
+      <div *ngFor="let item of intItems">
+        <nz-tag class="tagInt" nzMode="closeable">{{item.content}}</nz-tag>
+      </div>
+    </div>
+  </nz-card><br>
+  <nz-card class="cardBody">
+    <H2>GUILD INFORMATION</H2><br>
+    <div nz-row >
+      <div nz-col nzSpan="24" *ngIf="showguildbtnAdd" class="btnAdd">
+        <button nz-button nzType="primary" class="btnAdd" (click)="AddItem('guild')">ADD GUILD</button>
+      </div>
+    </div>
+    <div nz-row *ngIf="showguildAdd" class="divAdd">
+      <div nz-col nzSpan="8" >
+        <input nz-input [(ngModel)]="newguildContent" placeholder="Enter Your Guild" />
+      </div>
+      <button nz-button nzType="primary" class="btnAdd" (click)="saveItem()">Save</button>
+    </div>
+    <div nz-row nzJustify="center">
+      <div *ngFor="let item of guildItems">
+        <nz-tag class="tagInt" nzMode="closeable">{{item.content}}</nz-tag>
+      </div>
+    </div>
+  </nz-card><br>
+</div>

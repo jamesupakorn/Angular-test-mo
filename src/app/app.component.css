@@ -1,0 +1,107 @@
+.container {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.imgBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdcedf;
+  width: 100%;
+  height: 11rem;
+}
+.imgBackground img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.cardBody {
+  width: 95%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.Profilebody {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.floating-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 9rem;
+  width: 9rem;
+  border: 5px solid #fff;
+  background-color: #c7c8cc;
+
+  margin: 11rem 0rem 0rem 5rem;
+  /* ปรับตำแหน่งของภาพตามที่ต้องการ */
+}
+.upload-btn {
+  position: absolute;
+  margin: 3rem 0rem 0rem -11rem;
+  background-color: #e3e1d9;
+  border: 0px;
+}
+
+.uploadProfile-btn {
+  position: absolute;
+  margin: -20rem 0rem 0rem 11rem;
+  border-radius: 50%;
+  border: 0px;
+  width: 2rem;
+  height: 2rem;
+}
+.hidden-input {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.custom-file-upload:hover {
+  background-color: #e0e0e0;
+}
+.cardBody,
+.Profilebody {
+  border-radius: 20px;
+}
+.ant-input,
+.ant-select,
+.ant-picker {
+  width: 90%;
+}
+.divInput {
+  margin-top: -1rem;
+}
+div.btnAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.divAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.ant-timeline {
+  width: 25vw !important;
+}
+button.btnAdd {
+  color: #378ce7;
+  background-color: #fff;
+  border-radius: 16px;
+}
+nz-tag.tagInt {
+  background-color: #378ce7;
+  color: #fff;
+  border-radius: 16px;
+}
